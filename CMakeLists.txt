@@ -212,7 +212,7 @@ else()
   if(CXX_HAS_STD_CXX14)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c++14")
   else()
-    message(SEND_ERROR "Compiler does not support -std=c++14")
+    ##message(SEND_ERROR "Compiler does not support -std=c++14")
   endif()
 
   # on MacOSX with clang we need to use libc++ for C++14 headers
