@@ -195,7 +195,8 @@ endif()
 
 ###############################################################################
 # enable C++14 and more compiler features
-
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # more template depth for some tests and compilers
 include(CheckCXXCompilerFlag)
@@ -204,9 +205,6 @@ if(CXX_HAS_TEMPLATE_DEPTH)
   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -ftemplate-depth=1024")
 endif()
 
-# enable C++14
-set(CMAKE_CXX_STANDARD 14)
-set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 if(APPLE)
   if (CMAKE_CXX_COMPILER MATCHES ".*clang[+][+]"

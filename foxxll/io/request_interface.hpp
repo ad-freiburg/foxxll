@@ -48,10 +48,10 @@ public:
 protected:
     virtual void notify_waiters() = 0;
 
-   protected:
+protected:
     virtual void completed(bool canceled) = 0;
 
-   public:
+public:
     request_interface() = default;
 
     //! non-copyable: delete copy-constructor
