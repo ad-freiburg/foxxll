@@ -180,7 +180,7 @@ public:
 
         if (nextread < seq_length)
         {
-            assert(seq_lengthibuffer < nreadblocks);
+            assert(ibuffer < nreadblocks);
             size_t next_2_prefetch = prefetch_seq[nextread++];
             TLX_LOG << "block_prefetcher: prefetching block " << next_2_prefetch;
 
